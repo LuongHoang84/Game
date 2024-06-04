@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock, Paper, Scissors game</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Trò chơi Kéo, Giấy, Đá</h1>
+    <main>
+        <details class="rules-container">
+            <summary>Luật của trò chơi</summary>
+            <p>Bạn sẽ chơi với máy tính.</p>
+            <p>Bạn có thể chọn giữa Đá, Giấy và Kéo.</p>
+            <p>Ai đạt 3 điểm đầu tiên sẽ thắng.</p>
+            <p>Dưới đây là các quy tắc để nhận được điểm trong trò chơi:</p>
+            <ul>
+                <li>Đá thắng Kéo</li>
+                <li>Kéo thắng Giấy</li>
+                <li>Giấy thắng Đá</li>
+            </ul>
+            <p>
+                Nếu người chơi và máy tính chọn cùng một tùy chọn (Ví dụ: Giấy và
+                Giấy), thì hai bên hòa và không bên nào tăng điểm.
+            </p>
+        </details>
+
+        <div class="score-container">
+            <strong>
+                Player Score: <span class="score" id="player-score">0</span>
+            </strong>
+            <strong>
+                Computer Score: <span class="score" id="computer-score">0</span>
+            </strong>
+        </div>
+
+        <section class="options-container">
+            <h2>Chọn một lựa chọn:</h2>
+            <button id="rock-btn" class="btn">Đá</button>
+            <button id="paper-btn" class="btn">Giấy</button>
+            <button id="scissors-btn" class="btn">Kéo</button>
+        </section>
+
+        <div class="results-container">
+            <p id="result-msg"></p>
+            <p id="winner-msg"></p>
+            <button class="btn" id="reset-game-btn">Play again?</button>
+        </div>
+    </main>
+
+    <script src="./main.js"></script>
+</body>
+</html>
